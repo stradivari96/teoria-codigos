@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/euro.js"></script>
+    <title>Teoría de códigos</title>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Códigos detectores y correctores de errores</h1>
+        <p>Xiang Chen y Álvaro García</p>
+    </div>
+
+    <div class="container">
+        <div class="col-md-11 mb-3">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">NIF</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="isbn.html">ISBN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="iban.html">IBAN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="">EURO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tarjetas.html">Tarjetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="seguridad_social.html">Seguridad Social</a>
+              </li>
+            </ul>
+            <br>
+            <h1> EURO </h1>
+            <p>Uno de los mecanismos de seguridad de los billetes es su número de serie.</p>
+            <p>Para su validación sólo hay que hacer lo siguiente:</p>
+            <ul class="list-group">
+                <li class="list-group-item">Sustituir las letras por su valor ASCII.
+                </li>
+                <li class="list-group-item">Comprobar que el resultado módulo 9 es 0.
+                </li>
+            </ul>
+            <br>
+            <h3> Validación </h3>
+            <div class="input-group mb-3">
+                <input id="input_euro" type="text" placeholder="Ej: VB6276821212" class="form-control">
+                <button id="boton_verificar_euro" type="button" class="btn btn-outline-primary">Validar</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
